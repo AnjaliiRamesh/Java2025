@@ -1,0 +1,55 @@
+*function is a block of code that performs some sort of action 
+
+*lets say remote button when i press mute button the channel is ute now that is it performed some action
+
+*method is a function written inside a class
+
+*values jo function define karte waqt aati h unhe parameter kehte h
+aur values jo function call kartewaqt use karte h unhe ham arguments kehte h
+
+*java functions me call by value mtlb wo ek copy ka use karti h actual value kabhi nhi deti
+
+*In Java, when you create an object, the object must be of the same type as the class name.
+
+* function Overloading -> same name with different parameter
+function Overloading only depends on parameters not on return type 
+lets say int sum(int a, int b);
+         float sum( int a, int b, int c) 
+so this is not function Overloading
+
+* int sum(int a, int b);
+  float sum( float a, float b) //this works
+
+* jab func ke sath koi return type hota h to function calling ke waqt print statement bhi dena padta h
+aur jab function ka return type nhi hita lets say it is void to func calling ke waqt no need for print statments 
+// Refere to Proble isPrime and PrimeinRange for more clarifications
+  public static boolean PrimeNum( int n){
+        //edge case 
+        if(n == 2){
+            return true;
+        }
+        for(int i = 2; i<=Math.sqrt(n); i++){
+            if(n%2==0){
+                return false;
+            }
+        }
+        return  true;
+    }
+    public static void main(String[] args){
+       System.out.println(PrimeNum(5));
+       System.out.println(PrimeNum(12));
+
+      
+    }
+
+     public static void PrimeinRange(int n){
+        for(int i=2; i<=n ; i++){
+            if(PrimeNum(i)){
+                System.out.print(i +" ");
+            }
+        }
+    }
+    public static void main(String[] args){
+    // PrimeinRange(5);
+    PrimeinRange(20);
+    }
