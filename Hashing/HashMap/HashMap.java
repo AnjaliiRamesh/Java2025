@@ -6,22 +6,22 @@
 
 
 
-package Hashing.HashMap;
-import java.util.*;
+// package Hashing.HashMap;
+// import java.util.*;
 
 
-public class HashMap {
-    public static void main(String[] args) {
-        int[] arr = {5, 3, 5, 2, 5, 3};
+// public class HashMap {
+//     public static void main(String[] args) {
+//         int[] arr = {5, 3, 5, 2, 5, 3};
 
-        Map<Integer, Integer> freq = new HashMap<>();
+//         Map<Integer, Integer> freq = new HashMap<>();
 
-        for (int val : arr) {
-            freq.put(val, freq.getOrDefault(val, 0) + 1);
-        }
+//         for (int val : arr) {
+//             freq.put(val, freq.getOrDefault(val, 0) + 1);
+//         }
 
-        System.out.println(freq);
-    }
-}
+//         System.out.println(freq);
+//     }
+// }
 
 
