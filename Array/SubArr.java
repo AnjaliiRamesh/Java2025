@@ -4,10 +4,8 @@ public class SubArr {
         int ts = 0;
         int n = arr.length;
         for(int i=0; i<n; i++){
-          int start = i;
           for(int j=i; j<n; j++){
-            int end = j;
-            for(int k=start; k<=end; k++){
+            for(int k=i; k<=j; k++){
                 System.out.print(arr[k] +" ");
             }
             ts++;

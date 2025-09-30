@@ -4,11 +4,9 @@ public class MaxSum {
         int MaxSum = Integer.MIN_VALUE;
         int n = arr.length;
         for(int i=0; i<n; i++){
-          int start = i;
           for(int j=i; j<n; j++){
-            int end = j;
             int currSum = 0;
-            for(int k=start; k<=end; k++){
+            for(int k=i; k<=j; k++){
               currSum += arr[k];
             }
             System.out.println(currSum);
