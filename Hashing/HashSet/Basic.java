@@ -15,6 +15,7 @@ public class Basic {
         set.add(3);
         set.add(1);
         set.add(2);
+        
         System.out.println("size of set is: " +set.size());
         //print all elements
         System.out.println("elemnts of set are: " +set);
